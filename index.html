@@ -1,0 +1,15 @@
+<style>
+  body {
+    height: 100%;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  .pdfobject-container {
+    border: 1px solid #ccc;
+  }
+</style>
+<div id="my-pdf"></div>
+<script src="https://unpkg.com/pdfobject"></script>
+<script>
+  PDFObject.embed("./resume.pdf", "#my-pdf");
+</script>
